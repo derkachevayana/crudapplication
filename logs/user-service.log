@@ -1,0 +1,24 @@
+2025-12-19 16:37:04.012 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.4.Final
+2025-12-19 16:37:04.243 [main] INFO  org.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-12-19 16:37:04.392 [main] WARN  org.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2025-12-19 16:37:04.395 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001005: Loaded JDBC driver class: org.postgresql.Driver
+2025-12-19 16:37:04.395 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001012: Connecting with JDBC URL [jdbc:postgresql://localhost:5432/user_db]
+2025-12-19 16:37:04.396 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=postgres}
+2025-12-19 16:37:04.396 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+2025-12-19 16:37:04.398 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001115: Connection pool size: 10 (min=1)
+2025-12-19 16:37:04.632 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-12-19 16:37:04.654 [main] DEBUG org.hibernate.type.descriptor.sql.spi.DdlTypeRegistry - addDescriptor(2003, org.hibernate.type.descriptor.sql.internal.ArrayDdlTypeImpl@325bb9a6) replaced previous registration(org.hibernate.type.descriptor.sql.internal.ArrayDdlTypeImpl@1d12b024)
+2025-12-19 16:37:04.655 [main] DEBUG org.hibernate.type.descriptor.sql.spi.DdlTypeRegistry - addDescriptor(6, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@72fe8a4f) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@43effd89)
+2025-12-19 16:37:05.485 [main] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-19 16:37:05.504 [main] INFO  org.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@29c53c4f] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2025-12-19 16:37:05.591 [main] DEBUG org.hibernate.SQL - insert into users (age,created_at,email,name) values (?,?,?,?)
+2025-12-19 16:37:20.743 [main] DEBUG org.hibernate.SQL - select u1_0.id,u1_0.age,u1_0.created_at,u1_0.email,u1_0.name from users u1_0 where u1_0.id=?
+2025-12-19 16:37:26.325 [main] DEBUG org.hibernate.SQL - select u1_0.id,u1_0.age,u1_0.created_at,u1_0.email,u1_0.name from users u1_0 where u1_0.id=?
+2025-12-19 16:37:37.787 [main] DEBUG org.hibernate.SQL - select u1_0.id,u1_0.age,u1_0.created_at,u1_0.email,u1_0.name from users u1_0
+2025-12-19 16:37:55.118 [main] DEBUG org.hibernate.SQL - select u1_0.id,u1_0.age,u1_0.created_at,u1_0.email,u1_0.name from users u1_0 where u1_0.id=?
+2025-12-19 16:38:01.708 [main] DEBUG org.hibernate.SQL - update users set age=?,created_at=?,email=?,name=? where id=?
+2025-12-19 16:38:09.017 [main] DEBUG org.hibernate.SQL - select u1_0.id,u1_0.age,u1_0.created_at,u1_0.email,u1_0.name from users u1_0 where u1_0.id=?
+2025-12-19 16:38:09.021 [main] DEBUG org.hibernate.SQL - delete from users where id=?
+2025-12-19 16:38:19.152 [main] DEBUG org.hibernate.SQL - select u1_0.id,u1_0.age,u1_0.created_at,u1_0.email,u1_0.name from users u1_0 where u1_0.email=?
+2025-12-19 16:38:23.496 [main] DEBUG org.hibernate.SQL - select u1_0.id,u1_0.age,u1_0.created_at,u1_0.email,u1_0.name from users u1_0
+2025-12-19 16:38:35.118 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001008: Cleaning up connection pool [jdbc:postgresql://localhost:5432/user_db]
